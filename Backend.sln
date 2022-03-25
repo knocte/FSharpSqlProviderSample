@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BackendDataLayer", "BackendDataLayer\BackendDataLayer.fsproj", "{768EBA46-81DB-4E80-A0A2-5D31122B1D8A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DataLayerTestConsole", "DataLayerTestConsole\DataLayerTestConsole.fsproj", "{6A9587D8-A784-4488-8C23-73DEBAFB76A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{768EBA46-81DB-4E80-A0A2-5D31122B1D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768EBA46-81DB-4E80-A0A2-5D31122B1D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768EBA46-81DB-4E80-A0A2-5D31122B1D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768EBA46-81DB-4E80-A0A2-5D31122B1D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9587D8-A784-4488-8C23-73DEBAFB76A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9587D8-A784-4488-8C23-73DEBAFB76A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9587D8-A784-4488-8C23-73DEBAFB76A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9587D8-A784-4488-8C23-73DEBAFB76A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

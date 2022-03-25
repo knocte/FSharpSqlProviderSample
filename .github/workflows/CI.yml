@@ -1,0 +1,28 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Create DB
+        run: |
+          sudo apt update --yes
+          sudo apt install postgresql --yes
+          sudo service postgresql start
+          sudo -u postgres createdb runintomedb
+          sudo -u postgres psql -d runintomedb -a -q -f db/createDBCommands.sql
+          sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'localDevPassword';"
+
+      - name: Build backend
+        run: |
+          mkdir packages
+          dotnet restore Backend.sln
+          dotnet build Backend.sln
